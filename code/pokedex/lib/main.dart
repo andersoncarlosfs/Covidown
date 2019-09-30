@@ -57,10 +57,17 @@ class RandomWordsState extends State<RandomWords> {
         pair.asPascalCase,
         style: _biggerFont,
       ),
+      trailing: new Image.asset(
+          'assets/images/items/poke-ball.png',
+          color: alreadySaved ? null : Colors.grey,
+          colorBlendMode: BlendMode.modulate,
+      ),
+      /*
       trailing: Icon(
         alreadySaved ? Icons.favorite : Icons.favorite_border,
         color: alreadySaved ? Colors.red : null,
       ),
+      */
       onTap: () {
         setState(() {
           if (alreadySaved) {
