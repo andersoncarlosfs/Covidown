@@ -1,6 +1,4 @@
-// Copyright 2018 The Flutter team. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
@@ -15,14 +13,14 @@ class Pokedex extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.white,
       ),
-      home: RandomWords(),
+      home: RandomPokemons(),
     );
   }
 }
 
-class RandomWordsState extends State<RandomWords> {
-  final _suggestions = <WordPair>[];
-  final _saved = Set<WordPair>();
+class RandomPokemonsState extends State<RandomPokemons> {
+  final _suggestions = <String>[];
+  final _saved = Set<String>();
   final _biggerFont = const TextStyle(fontSize: 18.0);
   @override
   Widget build(BuildContext context) {
@@ -33,47 +31,68 @@ class RandomWordsState extends State<RandomWords> {
           IconButton(icon: Icon(Icons.list), onPressed: _pushSaved),
         ],
       ),
-      body: _buildSuggestions(),
+      body: _buildSuggestions(context),
     );
   }
-  Widget _buildSuggestions() {
-    return ListView.builder(
-        padding: const EdgeInsets.all(16.0),
-        itemBuilder: /*1*/ (context, i) {
-          if (i.isOdd) {
-            return Divider(); /*2*/
+  Widget _buildSuggestions(BuildContext context) {
+    return FutureBuilder(
+        future: DefaultAssetBundle.of(context).loadString(
+            'assets/datasets/pokemons.csv').asStream().transform(new LineSplitter()).toList(),
+        builder: (context, AsyncSnapshot<List<String>> snapshot) {
+          if (snapshot.data == null) {
+            return Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Image.asset('assets/images/items/poke-ball.png'),
+                ],
+              )
+              ],
+            );
           }
-          final index = i ~/ 2; /*3*/
-          if (index >= _suggestions.length) {
-            _suggestions.addAll(generateWordPairs().take(10)); /*4*/
-          }
-          return _buildRow(_suggestions[index]);
+          return ListView.builder(
+            padding: const EdgeInsets.all(16.0),
+            itemBuilder: /*1*/ (context, i) {
+              if (i.isOdd) {
+                return Divider(); /*2*/
+              }
+              final index = i ~/ 2; /*3*/
+              if (index >= _suggestions.length) {
+                _suggestions.addAll(snapshot.data.skip(index + 1).take(10));
+                /*
+                  _suggestions.addAll(generateWordPairs().take(10)); /*4*/
+                   */
+              }
+              return _buildRow(_suggestions[index]);
+            },
+          );
         });
   }
-  Widget _buildRow(WordPair pair) {
-    final alreadySaved = _saved.contains(pair);
+  Widget _buildRow(String pokemon) {
+    final alreadySaved = _saved.contains(pokemon);
     return ListTile(
       title: Text(
-        pair.asPascalCase,
+        pokemon,
         style: _biggerFont,
       ),
       trailing: new Image.asset(
-          'assets/images/items/poke-ball.png',
-          color: alreadySaved ? null : Colors.grey,
-          colorBlendMode: BlendMode.modulate,
+        'assets/images/items/poke-ball.png',
+        color: alreadySaved ? null : Colors.grey,
+        colorBlendMode: BlendMode.modulate,
       ),
       /*
-      trailing: Icon(
-        alreadySaved ? Icons.favorite : Icons.favorite_border,
-        color: alreadySaved ? Colors.red : null,
-      ),
-      */
+        trailing: Icon(
+          alreadySaved ? Icons.favorite : Icons.favorite_border,
+          color: alreadySaved ? Colors.red : null,
+        ),
+        */
       onTap: () {
         setState(() {
           if (alreadySaved) {
-            _saved.remove(pair);
+            _saved.remove(pokemon);
           } else {
-            _saved.add(pair);
+            _saved.add(pokemon);
           }
         });
       },
@@ -84,10 +103,10 @@ class RandomWordsState extends State<RandomWords> {
       MaterialPageRoute<void>(
         builder: (BuildContext context) {
           final Iterable<ListTile> tiles = _saved.map(
-                (WordPair pair) {
+                (String pokemon) {
               return ListTile(
                 title: Text(
-                  pair.asPascalCase,
+                  pokemon,
                   style: _biggerFont,
                 ),
               );
@@ -109,7 +128,7 @@ class RandomWordsState extends State<RandomWords> {
   }
 }
 
-class RandomWords extends StatefulWidget {
+class RandomPokemons extends StatefulWidget {
   @override
-  RandomWordsState createState() => RandomWordsState();
+  RandomPokemonsState createState() => RandomPokemonsState();
 }
