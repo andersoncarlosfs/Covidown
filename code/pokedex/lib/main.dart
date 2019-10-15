@@ -31,10 +31,10 @@ class RandomPokemonsState extends State<RandomPokemons> {
           IconButton(icon: Icon(Icons.list), onPressed: _pushSaved),
         ],
       ),
-      body: _buildSuggestions(context),
+      body: _buildPokedex(context),
     );
   }
-  Widget _buildSuggestions(BuildContext context) {
+  Widget _buildPokedex(BuildContext context) {
     return FutureBuilder(
         future: DefaultAssetBundle.of(context).loadString(
             'assets/datasets/pokemons.csv').asStream().transform(new LineSplitter()).toList(),
@@ -72,6 +72,11 @@ class RandomPokemonsState extends State<RandomPokemons> {
   Widget _buildRow(String pokemon) {
     final alreadySaved = _saved.contains(pokemon);
     return ListTile(
+      leading: new Image.asset(
+        'assets/images/pokemons/2.svg',
+        color: alreadySaved ? null : Colors.grey,
+        colorBlendMode: BlendMode.modulate,
+      ),
       title: Text(
         pokemon,
         style: _biggerFont,
