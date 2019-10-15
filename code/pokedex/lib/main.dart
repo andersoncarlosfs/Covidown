@@ -9,7 +9,7 @@ class Pokedex extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Startup Name Generator',
+      title: 'Pokédex',
       theme: ThemeData(
         primaryColor: Colors.white,
       ),
@@ -26,7 +26,7 @@ class RandomPokemonsState extends State<RandomPokemons> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Startup Name Generator'),
+        title: Text('Pokédex'),
         actions: <Widget>[
           IconButton(icon: Icon(Icons.list), onPressed: _pushSaved),
         ],
@@ -60,9 +60,6 @@ class RandomPokemonsState extends State<RandomPokemons> {
               final index = i ~/ 2; /*3*/
               if (index >= _suggestions.length) {
                 _suggestions.addAll(snapshot.data.skip(index + 1).take(10));
-                /*
-                  _suggestions.addAll(generateWordPairs().take(10)); /*4*/
-                   */
               }
               return _buildRow(_suggestions[index]);
             },
@@ -70,15 +67,18 @@ class RandomPokemonsState extends State<RandomPokemons> {
         });
   }
   Widget _buildRow(String pokemon) {
+    final data = pokemon.split(',');
+    final number = data[0];
+    final name = data[1];
     final alreadySaved = _saved.contains(pokemon);
     return ListTile(
       leading: new Image.asset(
-        'assets/images/pokemons/2.svg',
-        color: alreadySaved ? null : Colors.grey,
+        'assets/images/pokemons/${number}.png',
+        color: alreadySaved ? null : Colors.black,
         colorBlendMode: BlendMode.modulate,
       ),
       title: Text(
-        pokemon,
+        name,
         style: _biggerFont,
       ),
       trailing: new Image.asset(
@@ -86,12 +86,6 @@ class RandomPokemonsState extends State<RandomPokemons> {
         color: alreadySaved ? null : Colors.grey,
         colorBlendMode: BlendMode.modulate,
       ),
-      /*
-        trailing: Icon(
-          alreadySaved ? Icons.favorite : Icons.favorite_border,
-          color: alreadySaved ? Colors.red : null,
-        ),
-        */
       onTap: () {
         setState(() {
           if (alreadySaved) {
