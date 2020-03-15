@@ -3,7 +3,7 @@ import 'dart:convert';
 //
 import 'package:flutter/material.dart';
 //
-import 'package:covidown/model/country.dart';
+import 'package:covidown/model/entities/country.dart';
 
 class CountryListState extends State<CountryList> {
   final _suggestions = <String>[];
@@ -56,7 +56,7 @@ class CountryListState extends State<CountryList> {
   Widget _buildRow(String line) {
     final data = line.split(',');
     // TO REDO
-    final country = Country(data[0], data[3]);
+    final country = Country();
     final number = data[0];
     final name = data[1];
     final alreadySaved = _saved.contains(country);
