@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- https://www.cia.gov/library/publications/the-world-factbook/docs/flagsoftheworld.html -->
+<countries>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/xx.html" data-place-code="xx">World</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/af.html" data-place-code="af">Afghanistan</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ax.html" data-place-code="ax">Akrotiri</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/al.html" data-place-code="al">Albania</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ag.html" data-place-code="ag">Algeria</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/aq.html" data-place-code="aq">American Samoa</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/an.html" data-place-code="an">Andorra</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ao.html" data-place-code="ao">Angola</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/av.html" data-place-code="av">Anguilla</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ay.html" data-place-code="ay">Antarctica</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ac.html" data-place-code="ac">Antigua and Barbuda</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/xq.html" data-place-code="xq">Arctic Ocean</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ar.html" data-place-code="ar">Argentina</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/am.html" data-place-code="am">Armenia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/aa.html" data-place-code="aa">Aruba</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/at.html" data-place-code="at">Ashmore and Cartier Islands</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/zh.html" data-place-code="zh">Atlantic Ocean</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/as.html" data-place-code="as">Australia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/au.html" data-place-code="au">Austria</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/aj.html" data-place-code="aj">Azerbaijan</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/bf.html" data-place-code="bf">Bahamas, The</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ba.html" data-place-code="ba">Bahrain</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/um.html" data-place-code="um">Baker Island</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/bg.html" data-place-code="bg">Bangladesh</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/bb.html" data-place-code="bb">Barbados</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/bo.html" data-place-code="bo">Belarus</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/be.html" data-place-code="be">Belgium</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/bh.html" data-place-code="bh">Belize</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/bn.html" data-place-code="bn">Benin</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/bd.html" data-place-code="bd">Bermuda</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/bt.html" data-place-code="bt">Bhutan</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/bl.html" data-place-code="bl">Bolivia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/bk.html" data-place-code="bk">Bosnia and Herzegovina</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/bc.html" data-place-code="bc">Botswana</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/bv.html" data-place-code="bv">Bouvet Island</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/br.html" data-place-code="br">Brazil</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/io.html" data-place-code="io">British Indian Ocean Territory</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/vi.html" data-place-code="vi">British Virgin Islands</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/bx.html" data-place-code="bx">Brunei</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/bu.html" data-place-code="bu">Bulgaria</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/uv.html" data-place-code="uv">Burkina Faso</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/bm.html" data-place-code="bm">Burma</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/by.html" data-place-code="by">Burundi</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/cv.html" data-place-code="cv">Cabo Verde</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/cb.html" data-place-code="cb">Cambodia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/cm.html" data-place-code="cm">Cameroon</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ca.html" data-place-code="ca">Canada</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/cj.html" data-place-code="cj">Cayman Islands</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ct.html" data-place-code="ct">Central African Republic</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/cd.html" data-place-code="cd">Chad</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ci.html" data-place-code="ci">Chile</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ch.html" data-place-code="ch">China</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/kt.html" data-place-code="kt">Christmas Island</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ip.html" data-place-code="ip">Clipperton Island</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ck.html" data-place-code="ck">Cocos (Keeling) Islands</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/co.html" data-place-code="co">Colombia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/cn.html" data-place-code="cn">Comoros</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/cg.html" data-place-code="cg">Congo, Democratic Republic of the</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/cf.html" data-place-code="cf">Congo, Republic of the</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/cw.html" data-place-code="cw">Cook Islands</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/cr.html" data-place-code="cr">Coral Sea Islands</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/cs.html" data-place-code="cs">Costa Rica</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/iv.html" data-place-code="iv">Cote d'Ivoire</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/hr.html" data-place-code="hr">Croatia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/cu.html" data-place-code="cu">Cuba</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/uc.html" data-place-code="uc">Curacao</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/cy.html" data-place-code="cy">Cyprus</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ez.html" data-place-code="ez">Czechia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/da.html" data-place-code="da">Denmark</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/dx.html" data-place-code="dx">Dhekelia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/dj.html" data-place-code="dj">Djibouti</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/do.html" data-place-code="do">Dominica</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/dr.html" data-place-code="dr">Dominican Republic</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ec.html" data-place-code="ec">Ecuador</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/eg.html" data-place-code="eg">Egypt</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/es.html" data-place-code="es">El Salvador</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ek.html" data-place-code="ek">Equatorial Guinea</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/er.html" data-place-code="er">Eritrea</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/en.html" data-place-code="en">Estonia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/wz.html" data-place-code="wz">Eswatini</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/et.html" data-place-code="et">Ethiopia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/fk.html" data-place-code="fk">Falkland Islands (Islas Malvinas)</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/fo.html" data-place-code="fo">Faroe Islands</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/fj.html" data-place-code="fj">Fiji</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/fi.html" data-place-code="fi">Finland</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/fr.html" data-place-code="fr">France</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/fp.html" data-place-code="fp">French Polynesia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/fs.html" data-place-code="fs">French Southern and Antarctic Lands</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/gb.html" data-place-code="gb">Gabon</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ga.html" data-place-code="ga">Gambia, The</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/gz.html" data-place-code="gz">Gaza Strip</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/gg.html" data-place-code="gg">Georgia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/gm.html" data-place-code="gm">Germany</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/gh.html" data-place-code="gh">Ghana</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/gi.html" data-place-code="gi">Gibraltar</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/gr.html" data-place-code="gr">Greece</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/gl.html" data-place-code="gl">Greenland</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/gj.html" data-place-code="gj">Grenada</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/gq.html" data-place-code="gq">Guam</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/gt.html" data-place-code="gt">Guatemala</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/gk.html" data-place-code="gk">Guernsey</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/gv.html" data-place-code="gv">Guinea</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/pu.html" data-place-code="pu">Guinea-Bissau</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/gy.html" data-place-code="gy">Guyana</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ha.html" data-place-code="ha">Haiti</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/hm.html" data-place-code="hm">Heard Island and McDonald Islands</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/vt.html" data-place-code="vt">Holy See (Vatican City)</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ho.html" data-place-code="ho">Honduras</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/hk.html" data-place-code="hk">Hong Kong</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/um.html" data-place-code="um">Howland Island</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/hu.html" data-place-code="hu">Hungary</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ic.html" data-place-code="ic">Iceland</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/in.html" data-place-code="in">India</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/xo.html" data-place-code="xo">Indian Ocean</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/id.html" data-place-code="id">Indonesia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ir.html" data-place-code="ir">Iran</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/iz.html" data-place-code="iz">Iraq</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ei.html" data-place-code="ei">Ireland</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/im.html" data-place-code="im">Isle of Man</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/is.html" data-place-code="is">Israel</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/it.html" data-place-code="it">Italy</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/jm.html" data-place-code="jm">Jamaica</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/jn.html" data-place-code="jn">Jan Mayen</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ja.html" data-place-code="ja">Japan</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/um.html" data-place-code="um">Jarvis Island</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/je.html" data-place-code="je">Jersey</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/um.html" data-place-code="um">Johnston Atoll</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/jo.html" data-place-code="jo">Jordan</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/kz.html" data-place-code="kz">Kazakhstan</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ke.html" data-place-code="ke">Kenya</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/um.html" data-place-code="um">Kingman Reef</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/kr.html" data-place-code="kr">Kiribati</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/kn.html" data-place-code="kn">Korea, North</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ks.html" data-place-code="ks">Korea, South</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/kv.html" data-place-code="kv">Kosovo</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ku.html" data-place-code="ku">Kuwait</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/kg.html" data-place-code="kg">Kyrgyzstan</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/la.html" data-place-code="la">Laos</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/lg.html" data-place-code="lg">Latvia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/le.html" data-place-code="le">Lebanon</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/lt.html" data-place-code="lt">Lesotho</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/li.html" data-place-code="li">Liberia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ly.html" data-place-code="ly">Libya</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ls.html" data-place-code="ls">Liechtenstein</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/lh.html" data-place-code="lh">Lithuania</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/lu.html" data-place-code="lu">Luxembourg</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/mc.html" data-place-code="mc">Macau</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ma.html" data-place-code="ma">Madagascar</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/mi.html" data-place-code="mi">Malawi</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/my.html" data-place-code="my">Malaysia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/mv.html" data-place-code="mv">Maldives</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ml.html" data-place-code="ml">Mali</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/mt.html" data-place-code="mt">Malta</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/rm.html" data-place-code="rm">Marshall Islands</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/mr.html" data-place-code="mr">Mauritania</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/mp.html" data-place-code="mp">Mauritius</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/mx.html" data-place-code="mx">Mexico</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/fm.html" data-place-code="fm">Micronesia, Federated States of</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/um.html" data-place-code="um">Midway Islands</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/md.html" data-place-code="md">Moldova</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/mn.html" data-place-code="mn">Monaco</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/mg.html" data-place-code="mg">Mongolia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/mj.html" data-place-code="mj">Montenegro</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/mh.html" data-place-code="mh">Montserrat</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/mo.html" data-place-code="mo">Morocco</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/mz.html" data-place-code="mz">Mozambique</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/wa.html" data-place-code="wa">Namibia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/nr.html" data-place-code="nr">Nauru</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/bq.html" data-place-code="bq">Navassa Island</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/np.html" data-place-code="np">Nepal</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/nl.html" data-place-code="nl">Netherlands</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/nc.html" data-place-code="nc">New Caledonia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/nz.html" data-place-code="nz">New Zealand</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/nu.html" data-place-code="nu">Nicaragua</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ng.html" data-place-code="ng">Niger</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ni.html" data-place-code="ni">Nigeria</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ne.html" data-place-code="ne">Niue</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/nf.html" data-place-code="nf">Norfolk Island</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/mk.html" data-place-code="mk">North Macedonia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/cq.html" data-place-code="cq">Northern Mariana Islands</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/no.html" data-place-code="no">Norway</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/mu.html" data-place-code="mu">Oman</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/zn.html" data-place-code="zn">Pacific Ocean</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/pk.html" data-place-code="pk">Pakistan</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ps.html" data-place-code="ps">Palau</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/um.html" data-place-code="um">Palmyra Atoll</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/pm.html" data-place-code="pm">Panama</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/pp.html" data-place-code="pp">Papua New Guinea</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/pf.html" data-place-code="pf">Paracel Islands</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/pa.html" data-place-code="pa">Paraguay</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/pe.html" data-place-code="pe">Peru</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/rp.html" data-place-code="rp">Philippines</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/pc.html" data-place-code="pc">Pitcairn Islands</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/pl.html" data-place-code="pl">Poland</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/po.html" data-place-code="po">Portugal</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/rq.html" data-place-code="rq">Puerto Rico</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/qa.html" data-place-code="qa">Qatar</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ro.html" data-place-code="ro">Romania</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/rs.html" data-place-code="rs">Russia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/rw.html" data-place-code="rw">Rwanda</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/tb.html" data-place-code="tb">Saint Barthelemy</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/sh.html" data-place-code="sh">Saint Helena, Ascension, and Tristan da Cunha</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/sc.html" data-place-code="sc">Saint Kitts and Nevis</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/st.html" data-place-code="st">Saint Lucia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/rn.html" data-place-code="rn">Saint Martin</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/sb.html" data-place-code="sb">Saint Pierre and Miquelon</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/vc.html" data-place-code="vc">Saint Vincent and the Grenadines</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ws.html" data-place-code="ws">Samoa</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/sm.html" data-place-code="sm">San Marino</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/tp.html" data-place-code="tp">Sao Tome and Principe</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/sa.html" data-place-code="sa">Saudi Arabia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/sg.html" data-place-code="sg">Senegal</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ri.html" data-place-code="ri">Serbia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/se.html" data-place-code="se">Seychelles</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/sl.html" data-place-code="sl">Sierra Leone</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/sn.html" data-place-code="sn">Singapore</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/nn.html" data-place-code="nn">Sint Maarten</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/lo.html" data-place-code="lo">Slovakia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/si.html" data-place-code="si">Slovenia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/bp.html" data-place-code="bp">Solomon Islands</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/so.html" data-place-code="so">Somalia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/sf.html" data-place-code="sf">South Africa</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/sx.html" data-place-code="sx">South Georgia and South Sandwich Islands</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/od.html" data-place-code="od">South Sudan</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/oo.html" data-place-code="oo">Southern Ocean</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/sp.html" data-place-code="sp">Spain</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/pg.html" data-place-code="pg">Spratly Islands</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ce.html" data-place-code="ce">Sri Lanka</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/su.html" data-place-code="su">Sudan</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ns.html" data-place-code="ns">Suriname</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/sv.html" data-place-code="sv">Svalbard</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/sw.html" data-place-code="sw">Sweden</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/sz.html" data-place-code="sz">Switzerland</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/sy.html" data-place-code="sy">Syria</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/tw.html" data-place-code="tw">Taiwan</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ti.html" data-place-code="ti">Tajikistan</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/tz.html" data-place-code="tz">Tanzania</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/th.html" data-place-code="th">Thailand</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/tt.html" data-place-code="tt">Timor-Leste</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/to.html" data-place-code="to">Togo</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/tl.html" data-place-code="tl">Tokelau</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/tn.html" data-place-code="tn">Tonga</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/td.html" data-place-code="td">Trinidad and Tobago</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ts.html" data-place-code="ts">Tunisia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/tu.html" data-place-code="tu">Turkey</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/tx.html" data-place-code="tx">Turkmenistan</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/tk.html" data-place-code="tk">Turks and Caicos Islands</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/tv.html" data-place-code="tv">Tuvalu</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ug.html" data-place-code="ug">Uganda</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/up.html" data-place-code="up">Ukraine</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ae.html" data-place-code="ae">United Arab Emirates</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/uk.html" data-place-code="uk">United Kingdom</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/us.html" data-place-code="us">United States</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/um.html" data-place-code="um">United States Pacific Island Wildlife Refuges</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/uy.html" data-place-code="uy">Uruguay</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/uz.html" data-place-code="uz">Uzbekistan</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/nh.html" data-place-code="nh">Vanuatu</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ve.html" data-place-code="ve">Venezuela</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/vm.html" data-place-code="vm">Vietnam</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/vq.html" data-place-code="vq">Virgin Islands</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/wq.html" data-place-code="wq">Wake Island</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/wf.html" data-place-code="wf">Wallis and Futuna</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/we.html" data-place-code="we">West Bank</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/wi.html" data-place-code="wi">Western Sahara</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ym.html" data-place-code="ym">Yemen</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/za.html" data-place-code="za">Zambia</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/zi.html" data-place-code="zi">Zimbabwe</country>
+   <country value="https://www.cia.gov/library/publications/the-world-factbook/geos/ee.html" data-place-code="ee">European Union</country>
+</countries>
