@@ -1,7 +1,7 @@
 //
 import 'dart:math' as math;
 //
-import 'package:covidown/model/entities/country.dart';
+import 'package:covidown/view/utils/containers/settings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:latlong/latlong.dart';
@@ -9,29 +9,55 @@ import 'package:latlong/latlong.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_map_marker_cluster/flutter_map_marker_cluster.dart';
 //
+import 'package:covidown/model/entities/country.dart';
 import 'package:covidown/model/entities/report.dart';
 import 'package:covidown/controller/services/report_service.dart';
+import 'package:covidown/view/screens/utils/countries_screen.dart';
 import 'package:covidown/view/utils/containers/loader.dart';
 
-class TotalScreenState extends State<TotalScreen> {
+class TotalsScreenState extends State<TotalsScreen> {
 
   Country country;
   String version;
 
-  TotalScreenState({this.country, this.version});
+  TotalsScreenState({this.country, this.version});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         elevation: 5.0,
-        title: Text('World'),
+        title: Text(country == null ? 'World' : country.name),
+          actions: <Widget>[      // Add 3 lines from here...
+            IconButton(
+                icon: Icon(Icons.settings),
+                onPressed: () {
+                 setState(() {
+                   Settings.create(context);
+                 });
+                }
+            ),
+          ]
       ),
-      body: _buildTotals(context),
+      floatingActionButton: FloatingActionButton.extended(
+          label: Text('Countries'),
+          backgroundColor: Color.fromRGBO(Colors.blue.red, Colors.blue.green, Colors.blue.blue, 100.0),
+          elevation: 0,
+          onPressed: () {
+            setState(() {
+              Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => CountriesScreen()
+                  )
+              );
+            });
+          }
+      ),
+      body: _buildTotalsS(context),
     );
   }
 
-  Widget _buildTotals(BuildContext context) {
+  Widget _buildTotalsS(BuildContext context) {
     return FutureBuilder(
         future: new ReportService().getReports(country: country, version: version),
         builder: (context, AsyncSnapshot<dynamic> snapshot) {
@@ -58,18 +84,18 @@ class TotalScreenState extends State<TotalScreen> {
                   height: 25,
                   width: 25,
                   point: report.coordinates,
-                  builder: (context) => Icon(Icons.warning, color: Colors.yellow),
+                  builder: (context) => Icon(Icons.warning, color: Colors.red),
                 )
             );
           }
 
           return Column(
             children: [
-              _buildCard('Confirmed', confirmed, Icons.sentiment_neutral, Colors.red),
+              _buildCard('Confirmed', confirmed, Icons.sentiment_neutral, Colors.orange),
               _buildCard('Deaths', deaths, Icons.sentiment_dissatisfied, Colors.grey),
               _buildCard('Recovered', recovered, Icons.sentiment_satisfied, Colors.green),
               Expanded(
-                  child: _buildMap(markers.toList(), false)
+                  child: _buildMap(markers.toList(), country == null ? false : true)
               )
             ],
           );
@@ -233,7 +259,14 @@ class TotalScreenState extends State<TotalScreen> {
 
 }
 
-class TotalScreen extends StatefulWidget {
+class TotalsScreen extends StatefulWidget {
+
+  Country country;
+  String version;
+
+  TotalsScreen({this.country, this.version});
+
   @override
-  TotalScreenState createState() => TotalScreenState();
+  TotalsScreenState createState() => TotalsScreenState(country: this.country, version: this.version);
+
 }

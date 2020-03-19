@@ -1,10 +1,10 @@
 //
 import 'dart:async';
 //
-import 'package:covidown/controller/database_manager.dart';
-import 'package:covidown/view/utils/containers/loader.dart';
 import 'package:flutter/material.dart';
 //
+import 'package:covidown/controller/database_manager.dart';
+import 'package:covidown/view/utils/containers/loader.dart';
 import 'package:covidown/view/screens/utils/total_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
     DatabaseManager.upgrade().whenComplete(
             () => Navigator.of(context).pushReplacement(
             MaterialPageRoute(
-                builder: (BuildContext context) => TotalScreen()
+                builder: (BuildContext context) => TotalsScreen()
             )
         )
     );

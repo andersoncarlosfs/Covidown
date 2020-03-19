@@ -5,7 +5,6 @@ import 'package:latlong/latlong.dart';
 //
 import 'package:covidown/model/entities/report.dart';
 import 'package:covidown/controller/abstract_dao.dart';
-import 'package:covidown/controller/daos/country_dao.dart';
 
 class ReportDAO extends AbstractDAO<Report> {
 
@@ -33,12 +32,12 @@ class ReportDAO extends AbstractDAO<Report> {
     return new Report(
       number: map[getDiscriminatorColumn()],
       country: new Country(
-        name: map['country']
+          name: map['country']
       ),
       confirmed: map['confirmed'],
       deaths: map['deaths'],
       recovered: map['recovered'],
-      coordinates: new LatLng(map['latitude'], map['longitude']),
+      coordinates: map['latitude'] == null || map['longitude'] == null ? null : LatLng(map['latitude'], map['longitude']),
       date: map['date'],
       version: map['version'],
       timestamp: map['timestamp'],
@@ -110,7 +109,7 @@ class ReportDAO extends AbstractDAO<Report> {
     if(country != null) {
       where = where + ' AND country = ?';
 
-      arguments.add(country);
+      arguments.add(country.name);
     }
 
     return (await getDatabase().query(
@@ -135,10 +134,11 @@ class ReportDAO extends AbstractDAO<Report> {
 
     return (await getDatabase().query(
         getTable(),
-        columns: ['DISTICNT (country)'],
+        columns: ['DISTINCT (country) AS country'],
         where: where,
-        whereArgs: arguments
-    )).map((map) => new CountryDAO().toEntity(map)).toList();
+        whereArgs: arguments,
+        orderBy: 'country'
+    )).map((map) => toEntity(map).country).toList();
   }
 
 }

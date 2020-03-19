@@ -60,12 +60,12 @@ abstract class DatabaseManager {
     List<Report> entities = [];
 
     for (var line in await _retrieve(version)) {
-      List values = _parse(line);
+      List<String> values = _parse(line);
 
       entities.add(new Report(
         country: new Country(
           code: null,
-          name: values[1],
+          name: values[1].replaceAll('"', ''),
         ),
         confirmed: int.parse(values[3]),
         deaths: int.parse(values[4]),
@@ -104,7 +104,7 @@ abstract class DatabaseManager {
 
     int begin = 0;
 
-    List values = [];
+    List<String> values = [];
 
     for (var match in expression.allMatches(line)) {
       int end = match.end;
