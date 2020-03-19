@@ -1,7 +1,7 @@
 //
 import 'package:flutter/material.dart';
 //
-import 'package:covidown/view/country_list.dart';
+import 'package:covidown/view/screens/utils/splash_screen.dart';
 
 void main() => runApp(Covidown());
 
@@ -13,7 +13,7 @@ class Covidown extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.white,
       ),
-      home: CountryList(),
+      home: SplashScreen(),
     );
   }
 }

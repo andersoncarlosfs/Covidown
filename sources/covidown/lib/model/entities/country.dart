@@ -5,7 +5,21 @@ class Country extends AbstractEntity {
   final String code;
   final String name;
 
-  Country({this.code, this.name});
+  Country({
+    this.code,
+    this.name
+  });
+
+  String getIdentifier() {
+    return code;
+  }
+
+  Map<String, dynamic> toMap() {
+    return {
+      'code': code,
+      'name': name
+    };
+  }
 
   getEmoji() {
     return computeEmoji(code);
