@@ -39,7 +39,7 @@ abstract class AbstractDAO<T extends AbstractEntity> {
       await batch.commit();
 
     });
-    print(list);
+
     return list;
   }
 

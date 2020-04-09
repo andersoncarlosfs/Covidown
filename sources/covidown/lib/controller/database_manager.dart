@@ -46,7 +46,7 @@ abstract class DatabaseManager {
     final candidateVersion = DatabaseManager.getCandidateVersion();
 
     if (currentVersion != candidateVersion) {
-      await _persist(candidateVersion);
+      _persist(candidateVersion);
     }
 
     await _database.close();
@@ -59,25 +59,36 @@ abstract class DatabaseManager {
   static void _persist(String version) async {
     List<Report> entities = [];
 
-    for (var line in await _retrieve(version)) {
+    List<String> lines = await _retrieve(version);
+
+    for (var line in lines) {
+
       List<String> values = _parse(line);
 
-      entities.add(new Report(
+      values[5] = values[5].trim();
+      values[6] = values[6].trim();
+
+      Report report = new Report(
         country: new Country(
           code: null,
-          name: values[1].replaceAll('"', ''),
+          name: values[3].replaceAll('"', ''),
         ),
-        confirmed: int.parse(values[3]),
-        deaths: int.parse(values[4]),
-        recovered: int.parse(values[5]),
-        coordinates: LatLng(double.parse(values[6]), double.parse(values[7])),
-        date: values[2],
+        confirmed: int.parse(values[7]),
+        deaths: int.parse(values[8]),
+        recovered: int.parse(values[9]),
+        coordinates: LatLng(
+            double.parse(values[5] == '' ? '0' : values[5]),
+            double.parse(values[6] == '' ? '0' : values[6])
+        ),
+        date: values[4],
         version: version,
         timestamp: DateTime.now().millisecondsSinceEpoch,
-      ));
+      );
+
+      entities.add(report);
 
     }
-
+    print(entities);
     final Database database = await DatabaseManager.open();
 
     final dao = new ReportDAO(database: database);
@@ -93,7 +104,7 @@ abstract class DatabaseManager {
 
     if (_response.statusCode == 200) {
       // Skipping headers
-      return LineSplitter.split(_response.body).skip(1);
+      return LineSplitter.split(_response.body).skip(1).toList(growable: false);
     }
 
     if (current < tries) {
