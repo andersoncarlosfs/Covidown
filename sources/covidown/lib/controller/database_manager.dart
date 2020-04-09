@@ -46,7 +46,7 @@ abstract class DatabaseManager {
     final candidateVersion = DatabaseManager.getCandidateVersion();
 
     if (currentVersion != candidateVersion) {
-      _persist(candidateVersion);
+      await _persist(candidateVersion);
     }
 
     await _database.close();
