@@ -88,7 +88,7 @@ abstract class DatabaseManager {
       entities.add(report);
 
     }
-    print(entities);
+
     final Database database = await DatabaseManager.open();
 
     final dao = new ReportDAO(database: database);
