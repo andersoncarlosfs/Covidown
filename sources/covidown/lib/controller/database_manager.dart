@@ -52,8 +52,8 @@ abstract class DatabaseManager {
     await _database.close();
   }
 
-  static String getCandidateVersion() {
-    return DateFormat('MM-dd-yyyy').format(DateTime.now().subtract(Duration(days: 1))) + '.csv';
+  static String getCandidateVersion({int days = 0}) {
+    return DateFormat('MM-dd-yyyy').format(DateTime.now().subtract(Duration(days: days))) + '.csv';
   }
 
   static void _persist(String version) async {
@@ -88,12 +88,27 @@ abstract class DatabaseManager {
 
   }
 
-  static Future _retrieve(String file) async {
+  static Future _retrieve(String file, {int tries = 10, int current = 0, String latest = '04-08-2020.csv'}) async {
     final _response = await http.get('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/' + file);
 
     if (_response.statusCode == 200) {
       // Skipping headers
       return LineSplitter.split(_response.body).skip(1);
+    }
+
+    if (current < tries) {
+      return _retrieve(
+          DatabaseManager.getCandidateVersion(days: current),
+          current: current + 1
+      );
+    }
+
+    if (latest != null) {
+      return _retrieve(
+          DatabaseManager.getCandidateVersion(days: current),
+          current: current,
+          latest: null
+      );
     }
 
     return null;
