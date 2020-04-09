@@ -97,14 +97,14 @@ abstract class DatabaseManager {
     }
 
     if (current < tries) {
-      return _retrieve(
+      return await _retrieve(
           DatabaseManager.getCandidateVersion(days: current),
           current: current + 1
       );
     }
 
     if (latest != null) {
-      return _retrieve(
+      return await _retrieve(
           DatabaseManager.getCandidateVersion(days: current),
           current: current,
           latest: null
